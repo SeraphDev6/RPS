@@ -1,6 +1,11 @@
 import random
+#Declare global variables
+last_play=""
+losses_in_a_row=0
 #make the play function
-def play1(previous_play,play_history=[],last_play=""):
+def play1(previous_play,play_history=[]):
+    global last_play
+    global losses_in_a_row
     #keep track of opponent's plays
     play_history.append(previous_play)
     #how many times we lost in a row(ties dont reset)
