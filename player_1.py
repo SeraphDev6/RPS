@@ -8,8 +8,6 @@ def play1(previous_play,play_history=[]):
     global losses_in_a_row
     #keep track of opponent's plays
     play_history.append(previous_play)
-    #how many times we lost in a row(ties dont reset)
-    losses_in_a_row=0
     #make an array of Play options
     play_options=["R","P","S"]
     counters={"R":"P","P":"S","S":"R"}
